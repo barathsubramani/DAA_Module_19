@@ -1,37 +1,41 @@
-# EX 1A Factorial of a number
-## DATE:
+# EX 1A Reverse a String
 ## AIM:
-Write a Python Program to print factorial of a number recursively.
+To write a program to create a recursive function to reverse a string.
 
 ## Algorithm
-1. Start the program and define a recursive function num_fact(n) to compute the factorial.
-2. Inside the function, check if n is 0 or 1 — if so, return 1 (base case).
-3. If not, return n * num_fact(n - 1) to continue recursion.
-4. Read an integer input from the user. 
-5. Call the function with the input value and print the result.  
+1. Take input string s.
+2. If length of s is 0 or 1, return s (base case).
+3. Otherwise, recursively call the function with s[1:].
+4. Append s[0] to the result of the recursive call.
+5. Return the final reversed string.
 
 ## Program:
-```python
+```
 /*
 Program to implement Reverse a String
-Developed by: SOUNDARIYAN MN
-Register Number: 212222230146 
+Developed by: Soundariyan MN
+Register Number:  212222230146
 */
-def num_fact(n):
-    if n==0 or n==1:
-        return 1
-
-    return n*num_fact(n-1)
-        
-num=int(input())  
-res = num_fact(num)
-print(f"Factorial of number {num} = {res}")
-
+```
 ```
 
-## Output:
+def reverse_string(s):
+    """
+    Recursive function to reverse a string
+    """
+    if len(s) <= 1:  # base case: if the string is empty or has only one character, return it as is
+        return s
+    else:
+        return reverse_string(s[1:]) + s[0]  
 
-![image](https://github.com/user-attachments/assets/60aa690c-32b5-467c-af38-7b45bed03a30)
+
+input_string = input()
+reversed_string = reverse_string(input_string)
+print(reversed_string) 
+```
+
+# Output:
+![191](https://github.com/user-attachments/assets/08382943-fb48-4045-b23d-bc428af5cd2f)
 
 
 
