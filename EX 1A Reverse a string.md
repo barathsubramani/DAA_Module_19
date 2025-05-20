@@ -13,8 +13,8 @@ To write a program to create a recursive function to reverse a string.
 ```
 /*
 Program to implement Reverse a String
-Developed by: Soundariyan MN
-Register Number:  212222230146
+Developed by: Barath S
+Register Number:  212222230018
 */
 ```
 ```
